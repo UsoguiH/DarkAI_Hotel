@@ -1,0 +1,174 @@
+{
+	"ui": {
+		"settings": {
+			"title": "BEÁLLÍTÁSOK",
+			"general": "ÁLTALÁNOS",
+			"visuals": "GRAFIKA",
+			"sensitivity": "ÉRZÉKENYSÉG",
+			"controls": "IRÁNYÍTÁS",
+			"progress": "HALADÁS",
+			"language": "Nyelv",
+			"masterVolume": "Fő hangerő",
+			"fullscreen": "Teljes képernyő",
+			"shadows": "Árnyékok",
+			"verticalSensitivity": "Függőleges érzékenység",
+			"horizontalSensitivity": "Vízszintes érzékenység",
+			"move": "Mozgás",
+			"interact": "Interakció",
+			"listenCarefully": "Figyelmes hallgatás",
+			"crouch": "Guggolás",
+			"jump": "Ugrás",
+			"resetProgress": "Haladás visszaállítása",
+			"reportBug": "Hiba jelentése",
+			"exitGame": "KILÉPÉS A JÁTÉKBÓL"
+		},
+		"bugReport": {
+			"title": "HIBA JELENTÉSE",
+			"description": "Kérjük, írd le a tapasztalt hibát",
+			"placeholder": "Mi történt? Mit csináltál, amikor a hiba előfordult? Van más részlet, ami segíthet nekünk a javításban?",
+			"submit": "Jelentés küldése",
+			"submitting": "Küldés...",
+			"cancel": "Mégse",
+			"success": "Köszönjük a jelentést! Kivizsgáljuk az ügyet.",
+			"submitError": "Nem sikerült elküldeni a jelentést. Kérjük, próbáld újra."
+		},
+		"loading": {
+			"loading": "BETÖLTÉS",
+			"clickToStart": "KATTINTS A KEZDÉSHEZ",
+			"settings": "Beállítások"
+		},
+		"tutorial": {
+			"toMove": "mozgáshoz",
+			"toInteract": "interakcióhoz",
+			"toJump": "ugráshoz",
+			"toCrouch": "guggoláshoz",
+			"toListenCarefully": "figyelmesen hallgatáshoz",
+			"objectives": {
+				"enterTutorialRoom": "Lépj be a tanító szobába",
+				"closeDoor": "Zárd be az ajtót",
+				"listenBathroomDoor": "Hallgasd meg a fürdőszoba ajtaját",
+				"hideBehindCurtains": "Bújj el a fürdőszoba függönyei mögé",
+				"hideInsideDesk": "Bújj el az íróasztalba",
+				"checkNightstand": "Ellenőrizd az éjjeliszekrényt",
+				"closeNightstandDoor": "Zárd be az éjjeliszekrény ajtaját"
+			}
+		},
+		"objectives": {
+			"findExit": "Találd meg a kijáratot",
+			"refillSoapBottles": "Töltsd fel a szappan üvegeket",
+			"makeTheBed": "Vesd meg az ágyat",
+			"openTheWindow": "Nyisd ki az ablakot",
+			"clearLeftovers": "Takarítsd el a maradékot",
+			"cleanBathroom": "Tisztítsd ki a fürdőszobát"
+		},
+		"deathScreen": {
+			"youDied": "MEGHALTÁL",
+			"hidingSpotsFound": " rejtekhelyet találtál",
+			"continue": "FOLYTATÁS",
+			"restarting": "Újraindítás..."
+		},
+		"endGameScreen": {
+			"thankYouForPlaying": "KÖSZÖNJÜK, HOGY JÁTSZOTTÁL",
+			"yourTime": "Az időd:",
+			"death": "halál",
+			"deaths": "halálok",
+			"enterYourName": "Add meg a neved",
+			"signGuestBook": "Írd alá a vendégkönyvet",
+			"saving": "Mentés...",
+			"submissionSuccess": "A bejegyzésedet a recepciós pultnál láthatod",
+			"playAgain": "JÁTSSZ ÚJRA",
+			"restarting": "ÚJRAINDÍTÁS...",
+			"nameValidation": {
+				"tooShort": "A névnek legalább {{min}} karakterből kell állnia",
+				"tooLong": "A név legfeljebb {{max}} karakterből állhat",
+				"invalidPattern": "A név csak betűket, számokat, szóközöket és alapvető írásjeleket tartalmazhat",
+				"submitError": "A bejegyzés elküldése sikertelen. Próbáld újra."
+			}
+		},
+		"howItsMade": {
+			"title": "Hogyan készült",
+			"technologies": "TECHNOLÓGIÁK",
+			"people": "EMBEREK",
+			"openSource": "Ez egy nyílt forráskódú projekt. Nézd meg a",
+			"githubRepository": "GitHub tárolót",
+			"threejsDescription": "JavaScript könyvtár 3D grafika készítéséhez böngészőben",
+			"createdBy": "Készítette",
+			"r3fDescription": "Eszköz, amely megkönnyíti a three.js használatát React-tel",
+			"threejsJourneyDescription": "Online tanfolyam a webes 3D tanulásához",
+			"gameConceptDesignDev": "Játék koncepció, játék tervezés és játék fejlesztés",
+			"uiArtDirection": "Felhasználói felület és művészeti irányítás"
+		},
+		"reception": {
+			"guestBook": "Vendégkönyv",
+			"informations": "Információk",
+			"guestBookSubtitle": "Fejezd be a játékot, hogy regisztrálhasd a neved",
+			"searchPlaceholder": "Adj meg egy oldalszámot vagy keress egy nevet",
+			"completionTime": "Befejezési idő",
+			"time": "Idő",
+			"deaths": "Halálok",
+			"date": "Dátum"
+		},
+		"close": "Bezár"
+	},
+	"game": {
+		"dialogues": {
+			"locked": "Zárva van.",
+			"welcomeBack": "Üdvözlünk vissza.",
+			"welcomeHousekeeper": "Üdvözlünk. Te vagy az új takarítónő.",
+			"closeDoors": "Mindig zárd be magad mögött az ajtókat, különben bejöhetnek, amíg takarítod a szobát.",
+			"bathroomWarning": "Ha hallasz valamit, ne nyiss ajtót. De ne hagyatkozz csak erre: néha teljesen csendben vannak.",
+			"hideImmediately": "Ha kopogást hallasz, vagy észreveszed, hogy a TV vagy a rádió bekapcsol, bújj el.",
+			"checkRoom": "Ellenőrizd az egész szobát gondosan. Bárhol elbújhatnak.",
+			"spotWarning": "Ha meglátod egyiküket, gyorsan zárd be az ajtót és menj ki a szobából.",
+			"wellDone": "Szuper! Most takarítsd ki 8 szobát, hogy befejezd a napot.",
+			"turnBack": "Emlékezz: ha meglátod egyiküket egy szobában, azonnal fordulj vissza.",
+			"infested": "Ezeknek a szobáknak a fele véletlenszerűen fertőzött. Óvatosan haladj.",
+			"bathroomTasks": "A fürdőben változatos feladatok vannak (foltok, szemét, pókok...). Néhányat nehéz észrevenni."
+		},
+		"deathReasons": {
+			"underBed": "Az ágy alatt bújt el.",
+			"underBedsheets": "Az ágy alatt bújt el.",
+			"bathroomVent": "A fürdőszoba szellőzőjében bújt el.",
+			"roomVent": "A szellőzőben bújt el.",
+			"bedBasket": "Az ágy melletti szennyeskosárban bújt el.",
+			"windowBasket": "A TV állvány rekeszében bújt el (a televízió jobb oldalán).",
+			"hideoutMirror": "A tükör tükörképében bújt el. Ellenőrizd gondosan a tükörképeket.",
+			"behindDoor": "Az ajtó mögött várt. Mindig nézz, mielőtt becsukod.",
+			"footWindow": "A lábai látszottak a függöny alatt.",
+			"bathCeiling": "A mennyezeten bújt el.",
+			"servingCart": "A tálcás kocsiban bújt el.",
+			"belowTV": "A TV alatt bújt el.",
+			"landmineMirror": "A tükörben bújt el.",
+			"nearWindow": "A kanapé mellett bújt el.",
+			"ceilingCornerCouch": "A mennyezeten volt a kanapé felett.",
+			"behindCouch": "A kanapé mögött bújt el.",
+			"behindDesk": "Az íróasztal mögött bújt el.",
+			"insideDesk": "Az íróasztal alatt bújt el.",
+			"ceilingCenter": "A mennyezeten bújt el. Ellenőrizd mindenhol, mielőtt előre mész.",
+			"openedDesk": "Az asztal belsejében bújt el.",
+			"behindServingCart": "A tálcás kocsi mögött bújt el.",
+			"bathroomCorner": "A sarokban bújt el.",
+			"sonarBathroom": "Ne nyisd ki a fürdőszoba ajtaját, ha hangokat hallasz belülről (jobb klikk vagy Y a hallgatáshoz).",
+			"claymoreBath": "Zárd be gyorsan a függönyöket, mielőtt kijön és megtámad.",
+			"claymoreDesk": "Zárd be gyorsan az íróasztal ajtaját, mielőtt kijön és megtámad.",
+			"claymoreNightstand": "Zárd be gyorsan az éjjeliszekrény ajtaját, mielőtt kijön és megtámad.",
+			"claymoreWindow": "Zárd be gyorsan a függönyöket, mielőtt kijön és megtámad.",
+			"hunterLivingRoom": "Bármikor előjöhetnek a rejtekhelyükről. Menj ki gyorsan és zárd be az ajtót.",
+			"hunterCeilingLivingRoom": "Bármikor előjöhetnek a rejtekhelyükről. Menj ki gyorsan és zárd be az ajtót.",
+			"hunterNightstand": "Bármikor előjöhetnek a rejtekhelyükről. Menj ki gyorsan és zárd be az ajtót.",
+			"hunterWindow": "Bármikor előjöhetnek a rejtekhelyükről. Menj ki gyorsan és zárd be az ajtót.",
+			"firstHunter": "Bármikor előjöhetnek a rejtekhelyükről. Menj ki gyorsan és zárd be az ajtót.",
+			"raidBottles": "Ha kopogást hallasz, bújj el.",
+			"raidTV": "Ha a TV magától bekapcsol, bújj el.",
+			"raidRadio": "Ha a rádió magától bekapcsol, bújj el.",
+			"raidInscriptions": "Ha véres feliratokat látsz a falakon, bújj el.",
+			"raidFood": "Ha kopogást hallasz, bújj el.",
+			"raidDoor": "Mindig zárd be az ajtót, mielőtt kitakarítod a szobát.",
+			"claymoreChase": "Mindig ellenőrizd az összes rejtekhelyet, mielőtt kitakarítod a szobát."
+		},
+		"status": {
+			"thankYouForPlaying": "Köszönjük, hogy játszottál",
+			"playAgain": "Játssz újra"
+		}
+	}
+}

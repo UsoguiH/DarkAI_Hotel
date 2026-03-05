@@ -1,0 +1,174 @@
+{
+	"ui": {
+		"settings": {
+			"title": "AYARLAR",
+			"general": "GENEL",
+			"visuals": "GÖRSEL",
+			"sensitivity": "HASSASLIK",
+			"controls": "KONTROLLER",
+			"progress": "İLERLEME",
+			"language": "Dil",
+			"masterVolume": "Ana ses seviyesi",
+			"fullscreen": "Tam ekran",
+			"shadows": "Gölgeler",
+			"verticalSensitivity": "Dikey hassaslık",
+			"horizontalSensitivity": "Yatay hassaslık",
+			"move": "Hareket",
+			"interact": "Etkileşim",
+			"listenCarefully": "Dikkatlice dinle",
+			"crouch": "Çömel",
+			"jump": "Zıpla",
+			"resetProgress": "İlerlemeyi sıfırla",
+			"reportBug": "Hata bildir",
+			"exitGame": "OYUNDAN ÇIK"
+		},
+		"bugReport": {
+			"title": "HATA BİLDİR",
+			"description": "Lütfen karşılaştığınız hatayı açıklayın",
+			"placeholder": "Ne oldu? Hata oluştuğunda ne yapıyordunuz? Düzeltmemize yardımcı olabilecek başka detaylar var mı?",
+			"submit": "Rapor gönder",
+			"submitting": "Gönderiliyor...",
+			"cancel": "İptal",
+			"success": "Raporunuz için teşekkürler! İnceleyeceğiz.",
+			"submitError": "Rapor gönderilemedi. Lütfen tekrar deneyin."
+		},
+		"loading": {
+			"loading": "YÜKLENİYOR",
+			"clickToStart": "BAŞLAMAK İÇİN TIKLA",
+			"settings": "Ayarlar"
+		},
+		"tutorial": {
+			"toMove": "hareket etmek için",
+			"toInteract": "etkileşim için",
+			"toJump": "zıplamak için",
+			"toCrouch": "çömelmek için",
+			"toListenCarefully": "dikkatli dinlemek için",
+			"objectives": {
+				"enterTutorialRoom": "Eğitim odasına gir",
+				"closeDoor": "Kapıyı kapat",
+				"listenBathroomDoor": "Banyo kapısında dinle",
+				"hideBehindCurtains": "Banyo perdelerinin arkasına saklan",
+				"hideInsideDesk": "Masanın içine saklan",
+				"checkNightstand": "Komodini kontrol et",
+				"closeNightstandDoor": "Komodin kapısını kapat"
+			}
+		},
+		"objectives": {
+			"findExit": "Çıkışı bul",
+			"refillSoapBottles": "Sabun şişelerini doldur",
+			"makeTheBed": "Yatağı topla",
+			"openTheWindow": "Pencereyi aç",
+			"clearLeftovers": "Artıkları temizle",
+			"cleanBathroom": "Banyoyu temizle"
+		},
+		"deathScreen": {
+			"youDied": "ÖLDÜN",
+			"hidingSpotsFound": " saklanma yeri bulundu",
+			"continue": "DEVAM ET",
+			"restarting": "Yeniden başlatılıyor..."
+		},
+		"endGameScreen": {
+			"thankYouForPlaying": "OYNADIĞIN İÇİN TEŞEKKÜRLER",
+			"yourTime": "Süren:",
+			"death": "ölüm",
+			"deaths": "ölümler",
+			"enterYourName": "Adını gir",
+			"signGuestBook": "Misafir defterini imzala",
+			"saving": "Kaydediliyor...",
+			"submissionSuccess": "Girişini resepsiyon masasında görebilirsin",
+			"playAgain": "TEKRAR OYNA",
+			"restarting": "YENİDEN BAŞLATILIYOR...",
+			"nameValidation": {
+				"tooShort": "Ad en az {{min}} karakter olmalı",
+				"tooLong": "Ad en fazla {{max}} karakter olmalı",
+				"invalidPattern": "Ad sadece harfler, sayılar, boşluklar ve temel noktalama işaretleri içerebilir",
+				"submitError": "Girişin gönderilirken hata oluştu. Lütfen tekrar dene."
+			}
+		},
+		"howItsMade": {
+			"title": "Nasıl yapıldı",
+			"technologies": "TEKNOLOJİLER",
+			"people": "İNSANLAR",
+			"openSource": "Bu açık kaynak bir projedir. Şuraya göz at:",
+			"githubRepository": "GitHub deposu",
+			"threejsDescription": "Tarayıcıda 3D grafik oluşturmak için JavaScript kütüphanesi",
+			"createdBy": "Oluşturan",
+			"r3fDescription": "React ile three.js kullanımını kolaylaştıran araç",
+			"threejsJourneyDescription": "Web için 3D öğrenmek için çevrimiçi kurs",
+			"gameConceptDesignDev": "Oyun konsepti, oyun tasarımı ve oyun geliştirme",
+			"uiArtDirection": "Kullanıcı arayüzü ve sanat yönetimi"
+		},
+		"reception": {
+			"guestBook": "Misafir Defteri",
+			"informations": "Bilgiler",
+			"guestBookSubtitle": "Adınızı kaydetmek için oyunu tamamlayın",
+			"searchPlaceholder": "Sayfa numarası girin veya isim arayın",
+			"completionTime": "Tamamlanma Süresi",
+			"time": "Süre",
+			"deaths": "Ölümler",
+			"date": "Tarih"
+		},
+		"close": "Kapat"
+	},
+	"game": {
+		"dialogues": {
+			"locked": "Kilitli.",
+			"welcomeBack": "Tekrar hoş geldin.",
+			"welcomeHousekeeper": "Hoş geldin. Yeni temizlik görevlisi olmalısın.",
+			"closeDoors": "Odayı temizlerken onlar girebilir, bu yüzden arkandan kapıları her zaman kapat.",
+			"bathroomWarning": "Bir şey duyarsan açma. Ama buna güvenme: tamamen sessiz de olabilirler.",
+			"hideImmediately": "Kapı çalma sesi duyarsan veya TV ya da radyonun açıldığını fark edersen saklan.",
+			"checkRoom": "Tüm odayı dikkatli kontrol et. Her yerde saklanıyor olabilirler.",
+			"spotWarning": "Onlardan birini görürsen hızlıca kapıyı kapat ve odadan çık.",
+			"wellDone": "Aferin! Şimdi günü bitirmek için 8 oda temizle.",
+			"turnBack": "Unutma: bir odada onlardan birini görürsen hemen geri dön.",
+			"infested": "Bu odaların yarısı rastgele enfekte. Dikkatli ilerle.",
+			"bathroomTasks": "Banyoda görevler değişir (lekeler, çöp, örümcekler...). Bazılarını fark etmek zordur."
+		},
+		"deathReasons": {
+			"underBed": "Yatağın altında saklanıyordu.",
+			"underBedsheets": "Yatağın altında saklanıyordu.",
+			"bathroomVent": "Banyo havalandırmasında saklanıyordu.",
+			"roomVent": "Havalandırmada saklanıyordu.",
+			"bedBasket": "Yatak yanındaki çamaşır sepetinde saklanıyordu.",
+			"windowBasket": "TV sehpasının bölmesinde saklanıyordu (televizyonun sağında).",
+			"hideoutMirror": "Aynanın yansımasında saklanıyordu. Yansımaları dikkatle incele.",
+			"behindDoor": "Kapının arkasında bekliyordu. Kapatmadan önce her zaman bak.",
+			"footWindow": "Ayakları perdenin altından görünüyordu.",
+			"bathCeiling": "Tavanda saklanıyordu.",
+			"servingCart": "Servis arabasında saklanıyordu.",
+			"belowTV": "Televizyonun altında saklanıyordu.",
+			"landmineMirror": "Aynanın içinde saklanıyordu.",
+			"nearWindow": "Kanepenin yanında saklanıyordu.",
+			"ceilingCornerCouch": "Kanepenin üstündeki tavandaydı.",
+			"behindCouch": "Kanepenin arkasında saklanıyordu.",
+			"behindDesk": "Masanın arkasında saklanıyordu.",
+			"insideDesk": "Masanın altında saklanıyordu.",
+			"ceilingCenter": "Tavanda saklanıyordu. İlerlemeden önce her yeri kontrol et.",
+			"openedDesk": "Masanın içinde saklanıyordu.",
+			"behindServingCart": "Servis arabasının arkasında saklanıyordu.",
+			"bathroomCorner": "Köşede saklanıyordu.",
+			"sonarBathroom": "İçeriden ses geliyorsa banyo kapısını açma (dinlemek için sağ tık veya Y).",
+			"claymoreBath": "Çıkıp sana saldırmadan önce perdeleri hızlıca kapat.",
+			"claymoreDesk": "Çıkıp sana saldırmadan önce masa kapısını hızlıca kapat.",
+			"claymoreNightstand": "Çıkıp sana saldırmadan önce komodin kapısını hızlıca kapat.",
+			"claymoreWindow": "Çıkıp sana saldırmadan önce perdeleri hızlıca kapat.",
+			"hunterLivingRoom": "Her an saklandıkları yerden çıkabilirler. Hızlıca çık ve kapıyı kapat.",
+			"hunterCeilingLivingRoom": "Her an saklandıkları yerden çıkabilirler. Hızlıca çık ve kapıyı kapat.",
+			"hunterNightstand": "Her an saklandıkları yerden çıkabilirler. Hızlıca çık ve kapıyı kapat.",
+			"hunterWindow": "Her an saklandıkları yerden çıkabilirler. Hızlıca çık ve kapıyı kapat.",
+			"firstHunter": "Her an saklandıkları yerden çıkabilirler. Hızlıca çık ve kapıyı kapat.",
+			"raidBottles": "Kapı çalma sesi duyarsan saklan.",
+			"raidTV": "TV kendiliğinden açılırsa saklan.",
+			"raidRadio": "Radyo kendiliğinden açılırsa saklan.",
+			"raidInscriptions": "Duvarlarda kan yazıları görürsen saklan.",
+			"raidFood": "Kapı çalma sesi duyarsan saklan.",
+			"raidDoor": "Odayı temizlemeden önce her zaman kapıyı kapat.",
+			"claymoreChase": "Odayı temizlemeden önce her zaman tüm saklanma yerlerini kontrol et."
+		},
+		"status": {
+			"thankYouForPlaying": "Oynadığın için teşekkürler",
+			"playAgain": "Tekrar oyna"
+		}
+	}
+}

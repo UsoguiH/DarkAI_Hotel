@@ -1,0 +1,829 @@
+/* ===========================
+   Dark Therapist Chat Overlay
+   =========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter:wght@400;500;600&display=swap');
+
+/* ---- Base Container ---- */
+.dark-therapist-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background-color: #000;
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	overflow: hidden;
+}
+
+/* ---- Font Classes ---- */
+.dt-font-nothing {
+	font-family: 'DotGothic16', sans-serif;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.dt-font-clean {
+	font-family: 'Inter', sans-serif;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+/* ---- Scrollbar ---- */
+.dark-therapist-overlay ::-webkit-scrollbar {
+	width: 4px;
+}
+
+.dark-therapist-overlay ::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.dark-therapist-overlay ::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+}
+
+/* ---- Cursor Blink ---- */
+.dt-cursor-blink {
+	animation: dt-blink 1s steps(1) infinite;
+	display: inline-block;
+	color: #FF453A;
+	vertical-align: text-bottom;
+	margin-left: 2px;
+}
+
+@keyframes dt-blink {
+
+	0%,
+	49% {
+		opacity: 1;
+	}
+
+	50%,
+	100% {
+		opacity: 0;
+	}
+}
+
+/* ---- Glitch Hover Effect ---- */
+@keyframes dt-glitch {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(-1px, 1px);
+	}
+
+	40% {
+		transform: translate(-1px, -1px);
+	}
+
+	60% {
+		transform: translate(1px, 1px);
+	}
+
+	80% {
+		transform: translate(1px, -1px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
+
+.dt-glitch-hover:hover {
+	animation: dt-glitch 0.2s linear infinite;
+	color: #FF453A;
+}
+
+/* ---- Noise Overlay ---- */
+.dt-noise-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	z-index: 50;
+	opacity: 0.04;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* ---- Rare Flicker Animation ---- */
+@keyframes dt-rare-flicker {
+
+	0%,
+	96%,
+	98%,
+	100% {
+		opacity: 1;
+	}
+
+	97% {
+		opacity: 0.5;
+		filter: hue-rotate(10deg) drop-shadow(0 0 5px rgba(255, 69, 58, 0.5));
+	}
+
+	99% {
+		opacity: 0.8;
+	}
+}
+
+.dt-animate-rare-flicker {
+	animation: dt-rare-flicker 7s infinite;
+}
+
+/* ---- Corrupted Text (Gaslighting) ---- */
+.dt-corrupted-text {
+	filter: blur(0.5px);
+	opacity: 0.8;
+	color: rgba(255, 255, 255, 0.7) !important;
+	text-shadow: 1px 0 2px rgba(255, 69, 58, 0.5);
+}
+
+/* ---- Hide Real Cursor (Hack Mode) ---- */
+.dt-hide-cursor,
+.dt-hide-cursor * {
+	cursor: none !important;
+}
+
+/* ---- Pulse Animation ---- */
+@keyframes dt-pulse {
+
+	0%,
+	100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+}
+
+.dt-animate-pulse {
+	animation: dt-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ---- Landing Page ---- */
+.dt-landing {
+	position: relative;
+	z-index: 10;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 24px;
+	overflow-y: auto;
+	gap: 32px;
+}
+
+.dt-landing-content {
+	max-width: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.dt-landing-icon {
+	width: 64px;
+	height: 64px;
+	border-radius: 22px;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(24px);
+	border: 1px solid rgba(255, 69, 58, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 32px;
+	box-shadow: 0 8px 32px rgba(255, 69, 58, 0.15);
+	position: relative;
+	overflow: hidden;
+}
+
+.dt-landing-icon svg {
+	width: 32px;
+	height: 32px;
+	color: #FF453A;
+	filter: drop-shadow(0 0 15px rgba(255, 69, 58, 0.3));
+}
+
+.dt-landing-title {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 8px;
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 0.15em;
+}
+
+.dt-landing-subtitle {
+	font-size: 1.1rem;
+	color: rgba(255, 69, 58, 0.8);
+	margin-bottom: 48px;
+	text-align: center;
+	letter-spacing: 0.15em;
+}
+
+.dt-features {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	margin-top: 16px;
+}
+
+.dt-feature {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.dt-feature-icon {
+	margin-top: 4px;
+	opacity: 0.8;
+}
+
+.dt-feature-icon svg {
+	width: 28px;
+	height: 28px;
+	color: white;
+}
+
+.dt-feature-title {
+	font-size: 14px;
+	color: white;
+	line-height: 1.8;
+	letter-spacing: 0.15em;
+}
+
+.dt-feature-desc {
+	font-size: 15px;
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 1.3;
+	margin-top: 4px;
+}
+
+.dt-start-btn-wrap {
+	width: 100%;
+	max-width: 400px;
+	margin-top: 40px;
+}
+
+.dt-start-btn {
+	width: 100%;
+	padding: 24px;
+	border-radius: 24px;
+	background: white;
+	color: black;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+	transition: all 0.2s;
+	letter-spacing: 0.15em;
+}
+
+.dt-start-btn:hover {
+	background: #e0e0e0;
+}
+
+.dt-start-btn:active {
+	transform: scale(0.98);
+}
+
+/* ---- Chat Interface ---- */
+.dt-chat-wrapper {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background: transparent;
+}
+
+.dt-chat-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+/* iOS-style Header */
+.dt-chat-header {
+	height: 72px;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(40px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 12px;
+	position: sticky;
+	top: 0;
+	z-index: 30;
+}
+
+.dt-back-btn {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 8px;
+	color: #0A84FF;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 17px;
+	transition: all 0.3s;
+}
+
+.dt-back-btn:hover {
+	opacity: 0.7;
+}
+
+.dt-back-btn.hovered {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	opacity: 0.5;
+}
+
+.dt-back-btn svg {
+	width: 28px;
+	height: 28px;
+	margin-left: -6px;
+}
+
+.dt-header-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+.dt-header-avatar {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 4px;
+	position: relative;
+}
+
+.dt-header-avatar svg {
+	width: 20px;
+	height: 20px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.dt-header-avatar .dt-status-dot {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 12px;
+	height: 12px;
+	background: #FF453A;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.dt-header-name {
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.9);
+	letter-spacing: 0.15em;
+}
+
+.dt-header-actions {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 0 8px;
+}
+
+.dt-header-actions svg {
+	width: 20px;
+	height: 20px;
+	color: #0A84FF;
+	opacity: 0.3;
+}
+
+/* Messages Area */
+.dt-messages-area {
+	flex: 1;
+	overflow-y: auto;
+	padding: 32px 16px 128px;
+}
+
+.dt-messages-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.dt-date-header {
+	text-align: center;
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 1.8;
+}
+
+.dt-message-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.dt-message-row.user {
+	align-items: flex-end;
+}
+
+.dt-message-row.ai {
+	align-items: flex-start;
+}
+
+.dt-message-bubble {
+	max-width: 75%;
+	padding: 10px 16px;
+	border-radius: 22px;
+	transition: all 1s;
+}
+
+.dt-message-bubble.user {
+	background: #0A84FF;
+	color: white;
+	font-size: 16px;
+	line-height: 1.4;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dt-message-bubble.user.tail {
+	border-bottom-right-radius: 6px;
+}
+
+.dt-message-bubble.user.gaslit {
+	filter: blur(0.5px);
+	opacity: 0.8;
+	background: rgba(0, 0, 0, 0.4);
+	border: 1px solid rgba(255, 69, 58, 0.3);
+	color: rgba(255, 255, 255, 0.7) !important;
+	text-shadow: 1px 0 2px rgba(255, 69, 58, 0.5);
+}
+
+.dt-message-bubble.ai {
+	background: rgba(26, 5, 5, 0.7);
+	backdrop-filter: blur(40px);
+	border: 1px solid rgba(255, 69, 58, 0.15);
+	color: #FF453A;
+	font-size: 1.15rem;
+	box-shadow: 0 8px 30px rgba(255, 69, 58, 0.1);
+}
+
+.dt-message-bubble.ai.tail {
+	border-bottom-left-radius: 6px;
+}
+
+.dt-message-timestamp {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.4);
+	margin-top: 6px;
+	margin-right: 12px;
+	font-weight: 500;
+}
+
+/* Typing Indicator */
+.dt-typing {
+	display: flex;
+	align-items: flex-start;
+}
+
+.dt-typing-bubble {
+	background: rgba(26, 5, 5, 0.7);
+	backdrop-filter: blur(40px);
+	border: 1px solid rgba(255, 69, 58, 0.15);
+	padding: 14px 20px;
+	border-radius: 22px;
+	border-bottom-left-radius: 6px;
+	box-shadow: 0 8px 30px rgba(255, 69, 58, 0.1);
+}
+
+.dt-typing-text {
+	color: #FF453A;
+	font-size: 13px;
+	letter-spacing: 0.15em;
+}
+
+/* Input Bar */
+.dt-input-bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(40px);
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 12px 16px 32px;
+	z-index: 20;
+}
+
+.dt-input-row {
+	display: flex;
+	align-items: flex-end;
+	gap: 12px;
+	max-width: 768px;
+	margin: 0 auto;
+}
+
+.dt-plus-btn {
+	padding: 8px;
+	margin-left: -8px;
+	color: #0A84FF;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+
+.dt-plus-btn:hover {
+	opacity: 0.7;
+}
+
+.dt-plus-btn svg {
+	width: 28px;
+	height: 28px;
+}
+
+.dt-input-container {
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	background: rgba(28, 28, 30, 0.6);
+	backdrop-filter: blur(24px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 24px;
+	padding: 4px;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+	transition: border-color 0.3s;
+}
+
+.dt-input-container:focus-within {
+	border-color: rgba(10, 132, 255, 0.4);
+}
+
+.dt-input-textarea {
+	flex: 1;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: white;
+	resize: none;
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	padding: 8px 12px;
+	min-height: 40px;
+	max-height: 128px;
+}
+
+.dt-input-textarea::placeholder {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+.dt-input-textarea:disabled {
+	opacity: 0.5;
+	color: #FF453A;
+}
+
+.dt-send-btn {
+	padding: 6px;
+	border-radius: 50%;
+	border: none;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.dt-send-btn.active {
+	background: #0A84FF;
+	color: white;
+	box-shadow: 0 2px 10px rgba(10, 132, 255, 0.3);
+	transform: scale(1);
+}
+
+.dt-send-btn.inactive {
+	background: rgba(255, 255, 255, 0.1);
+	color: rgba(255, 255, 255, 0.3);
+	transform: scale(0.95);
+	cursor: not-allowed;
+}
+
+.dt-send-btn svg {
+	width: 20px;
+	height: 20px;
+	stroke-width: 2.5;
+}
+
+/* ---- Fake Notification ---- */
+.dt-fake-notif {
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	max-width: 400px;
+	margin: 0 auto;
+	background: rgba(28, 28, 30, 0.8);
+	backdrop-filter: blur(40px);
+	border-radius: 24px;
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	z-index: 100;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dt-notif-icon {
+	width: 44px;
+	height: 44px;
+	background: #34C759;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+
+.dt-notif-icon svg {
+	width: 24px;
+	height: 24px;
+	color: white;
+	fill: white;
+}
+
+.dt-notif-body {
+	flex: 1;
+	min-width: 0;
+}
+
+.dt-notif-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+.dt-notif-sender {
+	font-weight: 600;
+	font-size: 15px;
+	color: white;
+}
+
+.dt-notif-time {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dt-notif-text {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.9);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* ---- Fake Cursor ---- */
+.dt-fake-cursor {
+	position: fixed;
+	z-index: 100;
+	pointer-events: none;
+	filter: drop-shadow(0 2px 10px rgba(255, 255, 255, 0.3));
+}
+
+/* ---- Get Out Screen ---- */
+.dt-getout {
+	position: absolute;
+	inset: 0;
+	background: black;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dt-getout-text {
+	font-size: 15vw;
+	color: #FF453A;
+	letter-spacing: 0.2em;
+	line-height: 1;
+	text-shadow: 0 0 50px rgba(255, 69, 58, 0.8), 0 0 100px rgba(255, 69, 58, 0.4);
+}
+
+/* ---- Close Button ---- */
+.dt-close-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 10001;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.2s;
+}
+
+.dt-close-btn:hover {
+	background: rgba(255, 69, 58, 0.3);
+	border-color: rgba(255, 69, 58, 0.5);
+}
+
+/* ---- Animations ---- */
+@keyframes dt-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(15px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.dt-fade-in {
+	animation: dt-fade-in 0.4s ease-out forwards;
+}
+
+@keyframes dt-fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.dt-fade-in-up {
+	animation: dt-fade-in-up 0.6s ease-out forwards;
+}
+
+@keyframes dt-slide-down {
+	from {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(16px);
+		opacity: 1;
+	}
+}
+
+@keyframes dt-slide-up {
+	from {
+		transform: translateY(16px);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+}
+
+.dt-notif-enter {
+	animation: dt-slide-down 0.4s ease-out forwards;
+}
+
+.dt-notif-exit {
+	animation: dt-slide-up 0.3s ease-in forwards;
+}

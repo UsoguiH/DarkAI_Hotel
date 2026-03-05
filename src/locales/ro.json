@@ -1,0 +1,174 @@
+{
+	"ui": {
+		"settings": {
+			"title": "SETĂRI",
+			"general": "GENERAL",
+			"visuals": "GRAFICĂ",
+			"sensitivity": "SENSIBILITATE",
+			"controls": "CONTROALE",
+			"progress": "PROGRES",
+			"language": "Limbă",
+			"masterVolume": "Volum general",
+			"fullscreen": "Ecran complet",
+			"shadows": "Umbre",
+			"verticalSensitivity": "Sensibilitate verticală",
+			"horizontalSensitivity": "Sensibilitate orizontală",
+			"move": "Mișcare",
+			"interact": "Interacțiune",
+			"listenCarefully": "Ascultă cu atenție",
+			"crouch": "Ghemuire",
+			"jump": "Salt",
+			"resetProgress": "Resetare progres",
+			"reportBug": "Raportează o eroare",
+			"exitGame": "IEȘIRE DIN JOC"
+		},
+		"bugReport": {
+			"title": "RAPORTEAZĂ O EROARE",
+			"description": "Te rugăm să descrii eroarea întâlnită",
+			"placeholder": "Ce s-a întâmplat? Ce făceai când a apărut eroarea? Există alte detalii care ne-ar putea ajuta să o reparăm?",
+			"submit": "Trimite raportul",
+			"submitting": "Se trimite...",
+			"cancel": "Anulează",
+			"success": "Mulțumim pentru raport! Îl vom analiza.",
+			"submitError": "Nu s-a putut trimite raportul. Te rugăm să încerci din nou."
+		},
+		"loading": {
+			"loading": "SE ÎNCARCĂ",
+			"clickToStart": "CLICK PENTRU A ÎNCEPE",
+			"settings": "Setări"
+		},
+		"tutorial": {
+			"toMove": "pentru a te mișca",
+			"toInteract": "pentru a interacționa",
+			"toJump": "pentru a sări",
+			"toCrouch": "pentru a te ghemuii",
+			"toListenCarefully": "pentru a asculta cu atenție",
+			"objectives": {
+				"enterTutorialRoom": "Intră în camera de tutorial",
+				"closeDoor": "Închide ușa",
+				"listenBathroomDoor": "Ascultă la ușa băii",
+				"hideBehindCurtains": "Ascunde-te în spatele perdelelor din baie",
+				"hideInsideDesk": "Ascunde-te în birou",
+				"checkNightstand": "Verifică noptiera",
+				"closeNightstandDoor": "Închide ușa noptierei"
+			}
+		},
+		"objectives": {
+			"findExit": "Găsește ieșirea",
+			"refillSoapBottles": "Umple sticlele cu săpun",
+			"makeTheBed": "Fă patul",
+			"openTheWindow": "Deschide fereastra",
+			"clearLeftovers": "Curăță resturile",
+			"cleanBathroom": "Curăță baia"
+		},
+		"deathScreen": {
+			"youDied": "AI MURIT",
+			"hidingSpotsFound": " locuri de ascuns găsite",
+			"continue": "CONTINUĂ",
+			"restarting": "Repornește..."
+		},
+		"endGameScreen": {
+			"thankYouForPlaying": "MULȚUMIM CĂ AI JUCAT",
+			"yourTime": "Timpul tău:",
+			"death": "moarte",
+			"deaths": "morți",
+			"enterYourName": "Introdu numele tău",
+			"signGuestBook": "Semnează cartea de oaspeți",
+			"saving": "Se salvează...",
+			"submissionSuccess": "Îți poți vedea înregistrarea la recepție",
+			"playAgain": "JOACĂ DIN NOU",
+			"restarting": "REPORNEȘTE...",
+			"nameValidation": {
+				"tooShort": "Numele trebuie să aibă cel puțin {{min}} caractere",
+				"tooLong": "Numele poate avea cel mult {{max}} caractere",
+				"invalidPattern": "Numele poate conține doar litere, cifre, spații și punctuație de bază",
+				"submitError": "Trimiterea înregistrării a eșuat. Te rog încearcă din nou."
+			}
+		},
+		"howItsMade": {
+			"title": "Cum a fost făcut",
+			"technologies": "TEHNOLOGII",
+			"people": "OAMENI",
+			"openSource": "Acesta este un proiect open source. Verifică",
+			"githubRepository": "depozitul GitHub",
+			"threejsDescription": "O bibliotecă JavaScript pentru crearea de grafică 3D în browser",
+			"createdBy": "Creat de",
+			"r3fDescription": "Un instrument care face mai ușor să folosești three.js cu React",
+			"threejsJourneyDescription": "Un curs online pentru a învăța 3D pentru web",
+			"gameConceptDesignDev": "Conceptul jocului, designul jocului și dezvoltarea jocului",
+			"uiArtDirection": "Interfața utilizatorului și direcția artistică"
+		},
+		"reception": {
+			"guestBook": "Cartea oaspeților",
+			"informations": "Informații",
+			"guestBookSubtitle": "Completează jocul pentru a-ți înregistra numele",
+			"searchPlaceholder": "Introdu un număr de pagină sau caută un nume",
+			"completionTime": "Timp de finalizare",
+			"time": "Timp",
+			"deaths": "Morți",
+			"date": "Data"
+		},
+		"close": "Închide"
+	},
+	"game": {
+		"dialogues": {
+			"locked": "Este încuiat.",
+			"welcomeBack": "Bine ai revenit.",
+			"welcomeHousekeeper": "Bine ai venit. Trebuie să fii noua menajeră.",
+			"closeDoors": "Închide întotdeauna ușile în urma ta sau ar putea intra în timp ce curăți camera.",
+			"bathroomWarning": "Dacă auzi ceva, nu deschide. Dar nu te baza doar pe asta: pot fi și tăcuți.",
+			"hideImmediately": "Dacă auzi bătăi în ușă sau observi că televizorul sau radioul se aprind, ascunde-te.",
+			"checkRoom": "Verifică întreaga cameră cu atenție. S-ar putea să se ascundă oriunde.",
+			"spotWarning": "Dacă vezi unul dintre ei, închide rapid ușa și ieși din cameră.",
+			"wellDone": "Bine făcut! Acum curăță 8 camere pentru a termina ziua.",
+			"turnBack": "Amintește-ți: dacă vezi unul dintre ei într-o cameră, întoarce-te imediat.",
+			"infested": "Jumătate din aceste camere sunt infectate aleatoriu. Continuă cu prudență.",
+			"bathroomTasks": "În baie, sarcinile variază (pete, gunoi, păianjeni...). Unele sunt greu de observat."
+		},
+		"deathReasons": {
+			"underBed": "Se ascundea sub pat.",
+			"underBedsheets": "Se ascundea sub pat.",
+			"bathroomVent": "Se ascundea în ventilația băii.",
+			"roomVent": "Se ascundea în ventilație.",
+			"bedBasket": "Se ascundea în coșul de rufe de lângă pat.",
+			"windowBasket": "Se ascundea în compartimentul suportului TV (în dreapta televizorului).",
+			"hideoutMirror": "Se ascundea în reflexia oglinzii. Inspectează atent reflexiile.",
+			"behindDoor": "Aștepta în spatele ușii. Verifică întotdeauna înainte de a închide.",
+			"footWindow": "Picioarele lui erau vizibile sub perdea.",
+			"bathCeiling": "Se ascundea pe tavan.",
+			"servingCart": "Se ascundea în căruciorul de servire.",
+			"belowTV": "Se ascundea sub televizor.",
+			"landmineMirror": "Se ascundea în oglindă.",
+			"nearWindow": "Se ascundea lângă canapea.",
+			"ceilingCornerCouch": "Era pe tavan deasupra canapelei.",
+			"behindCouch": "Se ascundea în spatele canapelei.",
+			"behindDesk": "Se ascundea în spatele biroului.",
+			"insideDesk": "Se ascundea sub birou.",
+			"ceilingCenter": "Se ascundea pe tavan. Verifică pretutindeni înainte de a avansa.",
+			"openedDesk": "Se ascundea în interiorul biroului.",
+			"behindServingCart": "Se ascundea în spatele căruciorul de servire.",
+			"bathroomCorner": "Se ascundea în colț.",
+			"sonarBathroom": "Nu deschide ușa băii dacă auzi sunete din interior (click dreapta sau Y pentru a asculta).",
+			"claymoreBath": "Închide rapid perdelele înainte să iasă să te atace.",
+			"claymoreDesk": "Închide rapid ușa biroului înainte să iasă să te atace.",
+			"claymoreNightstand": "Închide rapid ușa noptieră înainte să iasă să te atace.",
+			"claymoreWindow": "Închide rapid perdelele înainte să iasă să te atace.",
+			"hunterLivingRoom": "Pot ieși din ascunzătoare în orice moment. Ieși rapid și închide ușa.",
+			"hunterCeilingLivingRoom": "Pot ieși din ascunzătoare în orice moment. Ieși rapid și închide ușa.",
+			"hunterNightstand": "Pot ieși din ascunzătoare în orice moment. Ieși rapid și închide ușa.",
+			"hunterWindow": "Pot ieși din ascunzătoare în orice moment. Ieși rapid și închide ușa.",
+			"firstHunter": "Pot ieși din ascunzătoare în orice moment. Ieși rapid și închide ușa.",
+			"raidBottles": "Dacă auzi bătăi, ascunde-te.",
+			"raidTV": "Dacă TV-ul se aprinde singur, ascunde-te.",
+			"raidRadio": "Dacă radioul se aprinde singur, ascunde-te.",
+			"raidInscriptions": "Dacă vezi inscripții cu sânge pe pereți, ascunde-te.",
+			"raidFood": "Dacă auzi bătăi, ascunde-te.",
+			"raidDoor": "Închide întotdeauna ușa înainte de a curăța camera.",
+			"claymoreChase": "Verifică întotdeauna toate ascunzătorile înainte de a curăța camera."
+		},
+		"status": {
+			"thankYouForPlaying": "Mulțumim că ai jucat",
+			"playAgain": "Joacă din nou"
+		}
+	}
+}

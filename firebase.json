@@ -1,0 +1,79 @@
+{
+	"firestore": {
+		"rules": "firestore.rules",
+		"indexes": "firestore.indexes.json"
+	},
+	"hosting": {
+		"public": "build",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+		"rewrites": [
+			{
+				"source": "!**/*.@(js|css|json|webmanifest|ico|png|jpg|jpeg|gif|svg|webp|mp3|mp4|glb|ktx2|ttf|otf|woff|woff2)",
+				"destination": "/index.html"
+			}
+		],
+		"headers": [
+			{
+				"source": "**/*.js",
+				"headers": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript; charset=utf-8"
+					}
+				]
+			},
+			{
+				"source": "**/*.mjs",
+				"headers": [
+					{
+						"key": "Content-Type",
+						"value": "application/javascript; charset=utf-8"
+					}
+				]
+			},
+			{
+				"source": "**/*.css",
+				"headers": [
+					{
+						"key": "Content-Type",
+						"value": "text/css; charset=utf-8"
+					}
+				]
+			},
+			{
+				"source": "**/*.webmanifest",
+				"headers": [
+					{
+						"key": "Content-Type",
+						"value": "application/manifest+json; charset=utf-8"
+					}
+				]
+			},
+			{
+				"source": "**/*.json",
+				"headers": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					}
+				]
+			},
+			{
+				"source": "/sounds/**/*.mp3",
+				"headers": [
+					{
+						"key": "Accept-Ranges",
+						"value": "bytes"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"value": "*"
+					}
+				]
+			}
+		]
+	},
+	"database": {
+		"rules": "database.rules.json"
+	}
+}

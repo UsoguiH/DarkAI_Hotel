@@ -1,0 +1,174 @@
+{
+	"ui": {
+		"settings": {
+			"title": "INDSTILLINGER",
+			"general": "GENERELT",
+			"visuals": "GRAFIK",
+			"sensitivity": "FØLSOMHED",
+			"controls": "KONTROLLER",
+			"progress": "FREMSKRIDT",
+			"language": "Sprog",
+			"masterVolume": "Hovedvolumen",
+			"fullscreen": "Fuld skærm",
+			"shadows": "Skygger",
+			"verticalSensitivity": "Vertikal følsomhed",
+			"horizontalSensitivity": "Horisontal følsomhed",
+			"move": "Bevægelse",
+			"interact": "Interager",
+			"listenCarefully": "Lyt omhyggeligt",
+			"crouch": "Duk",
+			"jump": "Hop",
+			"resetProgress": "Nulstil fremskridt",
+			"reportBug": "Rapporter fejl",
+			"exitGame": "AFSLUT SPIL"
+		},
+		"bugReport": {
+			"title": "RAPPORTER FEJL",
+			"description": "Beskriv venligst den fejl, du stødte på",
+			"placeholder": "Hvad skete der? Hvad lavede du, da fejlen opstod? Er der andre detaljer, der kan hjælpe os med at løse det?",
+			"submit": "Send rapport",
+			"submitting": "Sender...",
+			"cancel": "Annuller",
+			"success": "Tak for din rapport! Vi vil undersøge det.",
+			"submitError": "Kunne ikke sende rapporten. Prøv venligst igen."
+		},
+		"loading": {
+			"loading": "INDLÆSER",
+			"clickToStart": "KLIK FOR AT STARTE",
+			"settings": "Indstillinger"
+		},
+		"tutorial": {
+			"toMove": "for at bevæge sig",
+			"toInteract": "for at interagere",
+			"toJump": "for at hoppe",
+			"toCrouch": "for at krybe",
+			"toListenCarefully": "for at lytte omhyggeligt",
+			"objectives": {
+				"enterTutorialRoom": "Gå ind i tutorial-rummet",
+				"closeDoor": "Luk døren",
+				"listenBathroomDoor": "Lyt ved badeværelsesdøren",
+				"hideBehindCurtains": "Gem dig bag badeværelsesgardinerne",
+				"hideInsideDesk": "Gem dig inde i skrivebordet",
+				"checkNightstand": "Tjek natbordet",
+				"closeNightstandDoor": "Luk natbordets dør"
+			}
+		},
+		"objectives": {
+			"findExit": "Find udgangen",
+			"refillSoapBottles": "Genopfyld sæbeflasker",
+			"makeTheBed": "Red sengen",
+			"openTheWindow": "Åbn vinduet",
+			"clearLeftovers": "Ryd op efterladenskaber",
+			"cleanBathroom": "Rengør badeværelset"
+		},
+		"deathScreen": {
+			"youDied": "DU DØDE",
+			"hidingSpotsFound": " gemmesteder fundet",
+			"continue": "FORTSÆT",
+			"restarting": "Genstarter..."
+		},
+		"endGameScreen": {
+			"thankYouForPlaying": "TAK FOR AT SPILLE",
+			"yourTime": "Din tid:",
+			"death": "dødsfald",
+			"deaths": "dødsfald",
+			"enterYourName": "Indtast dit navn",
+			"signGuestBook": "Underskriv gæstebogen",
+			"saving": "Gemmer...",
+			"submissionSuccess": "Du kan se dit indlæg ved receptionen",
+			"playAgain": "SPIL IGEN",
+			"restarting": "GENSTARTER...",
+			"nameValidation": {
+				"tooShort": "Navnet skal være mindst {{min}} tegn",
+				"tooLong": "Navnet må højst være {{max}} tegn",
+				"invalidPattern": "Navnet må kun indeholde bogstaver, tal, mellemrum og grundlæggende tegnsætning",
+				"submitError": "Kunne ikke sende dit indlæg. Prøv igen."
+			}
+		},
+		"howItsMade": {
+			"title": "Sådan blev det lavet",
+			"technologies": "TEKNOLOGIER",
+			"people": "PERSONER",
+			"openSource": "Dette er et open source projekt. Tjek",
+			"githubRepository": "GitHub-repositoriet",
+			"threejsDescription": "Et JavaScript-bibliotek til at skabe 3D-grafik i browseren",
+			"createdBy": "Skabt af",
+			"r3fDescription": "Et værktøj der gør det lettere at bruge three.js med React",
+			"threejsJourneyDescription": "Et online kursus til at lære 3D til web",
+			"gameConceptDesignDev": "Spilkoncept, spildesign og spiludvikling",
+			"uiArtDirection": "Brugergrænseflade og kunstnerisk ledelse"
+		},
+		"reception": {
+			"guestBook": "Gæstebog",
+			"informations": "Informationer",
+			"guestBookSubtitle": "Gennemfør spillet for at registrere dit navn",
+			"searchPlaceholder": "Indtast et sidenummer eller søg efter et navn",
+			"completionTime": "Gennemførelsestid",
+			"time": "Tid",
+			"deaths": "Dødsfald",
+			"date": "Dato"
+		},
+		"close": "Luk"
+	},
+	"game": {
+		"dialogues": {
+			"locked": "Det er låst.",
+			"welcomeBack": "Velkommen tilbage.",
+			"welcomeHousekeeper": "Velkommen. Du må være den nye husholderske.",
+			"closeDoors": "Luk altid døre bag dig, ellers kan de komme ind mens du rengør rummet.",
+			"bathroomWarning": "Hvis du hører noget, så åbn ikke. Men stol ikke kun på det: de kan også være helt stille.",
+			"hideImmediately": "Hvis du hører banking eller bemærker at TV'et eller radioen tænder, gem dig.",
+			"checkRoom": "Tjek hele rummet omhyggeligt. De kan gemme sig hvor som helst.",
+			"spotWarning": "Hvis du ser en af dem, luk hurtigt døren og forlad rummet.",
+			"wellDone": "Godt klaret! Rengør nu 8 rum for at afslutte dagen.",
+			"turnBack": "Husk: hvis du ser en af dem i et rum, vend om med det samme.",
+			"infested": "Halvdelen af disse rum er tilfældigt inficerede. Fortsæt forsigtigt.",
+			"bathroomTasks": "På badeværelset varierer opgaverne (pletter, affald, edderkopper...). Nogle er svære at få øje på."
+		},
+		"deathReasons": {
+			"underBed": "Den gemte sig under sengen.",
+			"underBedsheets": "Den gemte sig under sengen.",
+			"bathroomVent": "Den gemte sig i badeværelsesventilationen.",
+			"roomVent": "Den gemte sig i ventilationen.",
+			"bedBasket": "Den gemte sig i vasketøjskurven ved sengen.",
+			"windowBasket": "Den gemte sig i TV-standets rum (til højre for tv'et).",
+			"hideoutMirror": "Den gemte sig i spejlets billede. Inspicér spejlingerne omhyggeligt.",
+			"behindDoor": "Den ventede bag døren. Kig altid før du lukker.",
+			"footWindow": "Dens fødder var synlige under gardinet.",
+			"bathCeiling": "Den gemte sig i loftet.",
+			"servingCart": "Den gemte sig i serveringsvognen.",
+			"belowTV": "Den gemte sig under TV'et.",
+			"landmineMirror": "Den gemte sig i spejlet.",
+			"nearWindow": "Den gemte sig ved siden af sofaen.",
+			"ceilingCornerCouch": "Den var i loftet over sofaen.",
+			"behindCouch": "Den gemte sig bag sofaen.",
+			"behindDesk": "Den gemte sig bag skrivebordet.",
+			"insideDesk": "Den gemte sig under skrivebordet.",
+			"ceilingCenter": "Den gemte sig i loftet. Tjek overalt før du bevæger dig fremad.",
+			"openedDesk": "Den gemte sig inde i skrivebordet.",
+			"behindServingCart": "Den gemte sig bag serveringsvognen.",
+			"bathroomCorner": "Den gemte sig i hjørnet.",
+			"sonarBathroom": "Åbn ikke badeværelsesdøren hvis du hører lyde indefra (højreklik eller Y for at lytte).",
+			"claymoreBath": "Luk gardinerne hurtigt før den kommer ud og angriber dig.",
+			"claymoreDesk": "Luk skrivebordsdøren hurtigt før den kommer ud og angriber dig.",
+			"claymoreNightstand": "Luk natbordsdøren hurtigt før den kommer ud og angriber dig.",
+			"claymoreWindow": "Luk gardinerne hurtigt før den kommer ud og angriber dig.",
+			"hunterLivingRoom": "De kan dukke op fra deres gemmested når som helst. Gå ud hurtigt og luk døren.",
+			"hunterCeilingLivingRoom": "De kan dukke op fra deres gemmested når som helst. Gå ud hurtigt og luk døren.",
+			"hunterNightstand": "De kan dukke op fra deres gemmested når som helst. Gå ud hurtigt og luk døren.",
+			"hunterWindow": "De kan dukke op fra deres gemmested når som helst. Gå ud hurtigt og luk døren.",
+			"firstHunter": "De kan dukke op fra deres gemmested når som helst. Gå ud hurtigt og luk døren.",
+			"raidBottles": "Hvis du hører banken, gem dig.",
+			"raidTV": "Hvis TV'et tænder af sig selv, gem dig.",
+			"raidRadio": "Hvis radioen tænder af sig selv, gem dig.",
+			"raidInscriptions": "Hvis du ser blodindskrifter på væggene, gem dig.",
+			"raidFood": "Hvis du hører banken, gem dig.",
+			"raidDoor": "Luk altid døren før rengøring af rummet.",
+			"claymoreChase": "Tjek altid alle gemmer før rengøring af rummet."
+		},
+		"status": {
+			"thankYouForPlaying": "Tak for at spille",
+			"playAgain": "Spil igen"
+		}
+	}
+}
